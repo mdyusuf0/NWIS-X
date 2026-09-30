@@ -1,18 +1,13 @@
 from pydantic_settings import BaseSettings
 
 class Settings(BaseSettings):
-    """App configuration settings loaded from .env"""
-    db_host: str = "localhost"
-    db_port: int = 5432
-    db_user: str = "nwisx_user"
-    db_pass: str = "nwisx_pass"
-    db_name: str = "nwisx_db"
-    redis_url: str = "redis://localhost:6379/0"
-    openai_api_key: str = ""
-    witsml_url: str = ""
-    witsml_user: str = ""
-    witsml_pass: str = ""
-
+    DATABASE_URL: str = "sqlite:///./nwisx.db"
+    API_HOST: str = "0.0.0.0"
+    API_PORT: int = 8000
+    MODEL_PATH: str = "models/"
+    SECRET_KEY: str = "supersecretkey"
+    DEBUG: bool = True
+    
     class Config:
         env_file = ".env"
 

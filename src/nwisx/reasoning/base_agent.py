@@ -1,8 +1,11 @@
 from abc import ABC, abstractmethod
 
 class BaseAgent(ABC):
-    """Abstract base class for all reasoning agents."""
+    @property
+    @abstractmethod
+    def name(self) -> str:
+        pass
+        
     @abstractmethod
     def reason(self, context: dict) -> dict:
-        """Perform agent-specific reasoning."""
         pass

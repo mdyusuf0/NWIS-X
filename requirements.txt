@@ -1,0 +1,17 @@
+fastapi
+uvicorn
+sqlalchemy
+psycopg2-binary
+pymupdf
+pytesseract
+pillow
+scikit-learn
+scipy
+numpy
+pandas
+networkx
+sentence-transformers
+langchain
+pydantic
+pydantic-settings
+redis

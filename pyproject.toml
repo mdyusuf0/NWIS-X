@@ -1,0 +1,31 @@
+[project]
+name = "nwisx"
+version = "0.1.0"
+description = "AI-powered Neighbourhood Well Intelligence System"
+authors = [
+    {name = "Next-Gen Coders"}
+]
+dependencies = [
+    "fastapi",
+    "uvicorn",
+    "sqlalchemy",
+    "psycopg2-binary",
+    "pymupdf",
+    "pytesseract",
+    "pillow",
+    "scikit-learn",
+    "scipy",
+    "numpy",
+    "pandas",
+    "networkx",
+    "sentence-transformers",
+    "langchain",
+    "pydantic",
+    "pydantic-settings",
+    "redis",
+    "witsml-client-placeholder"
+]
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
